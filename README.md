@@ -1,7 +1,8 @@
 # Installing-Language-Models-Locally
  Installing and running language model llama3 and moondream locally using Ollama
 
-Download Ollama from [here](https://ollama.com/download/OllamaSetup.exe))
+Download Ollama from [here](https://ollama.com/download/OllamaSetup.exe)
+
 Open the terminal in the folder where the Ollama.exe file is stored
 
 #1 llama3 
@@ -77,5 +78,6 @@ Interacting with the model via API through Invoke-WebRequest.
 (Invoke-WebRequest -method POST -Body '{"model":"Moondream", "prompt":"When did the roman Empire fall?", "stream": false}' -uri http://localhost:11434/api/generate ).Content | ConvertFrom-json
 
 ```
-Upon installing and running both the models parallely it was noticed that Moondream gave quick and concise responses. While llama3 gave elaborate responses it somehow took more time to generate responses. 
-[Link](https://ollama.com/download/OllamaSetup.exe)) to the youtube video demonstrating the above. 
+**Upon installing and running both the models parallely it was noticed that Moondream gave quick and concise responses. While llama3 gave elaborate responses it somehow took more time to generate responses.**
+
+[Link](https://ollama.com/download/OllamaSetup.exe) to the youtube video demonstrating the above. 
